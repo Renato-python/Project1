@@ -1,4 +1,4 @@
 FROM  tomcat
-COPY abctechnologies.war /usr/local/tomcat
+COPY ABCtechnologies.war /usr/local/tomcat
 EXPOSE [8080]
 CMD ["catalina.sh"]
