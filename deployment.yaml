@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: abc-tech-deployment
+  name: renato71/abc-tech
 spec:
   replicas: 1
   selector:
@@ -14,8 +14,7 @@ spec:
     spec:
       containers:
       - name: abc-tecnologies
-        image: renato71/abc_tech:39
-        imagePullPolicy: Always
+        image: renato71/abc_tech:replaceImageTag
         ports:
         - containerPort: 8080
 
