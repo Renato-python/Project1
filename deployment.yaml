@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: renato71/abc_tech
-  namespace: default
   labels:
     app: renato71/abc_tech
 spec: 
