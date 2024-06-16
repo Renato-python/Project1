@@ -25,7 +25,7 @@ metadata:
   name: renato71/abc_tech
 spec:
   selector:
-    app: abc-tech-deploy
+    app: renato71/abc_tech
   ports: 
     - protocol: TCP
       port: 80
