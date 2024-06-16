@@ -13,7 +13,7 @@ spec:
         app: renato71/abc-tech
     spec:
       containers:
-      - name: abc-tecnologies
+        - name: abc-tecnologies
         image: renato71/abc_tech:replaceImageTag
         ports:
         - containerPort: 8080
