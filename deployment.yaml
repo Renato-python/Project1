@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: renato71/abc-tech
-spec:
-  replicas: 1
+  name: abc-tech-deploy
+spec: 
   selector:
     matchlabels:
-       app: renato71/abc-tech
+       app: abc_deploy
+  replicas: 2    
   template:
     metadata:
       labels:
-        app: renato71/abc-tech
+        app: abc_deploy
     spec:
       containers:
-        - name: abc-tecnologies
-        image: renato71/abc_tech:replaceImageTag
+        - name: abc_deply
+        image: renato71/abc_tech:latest
         ports:
         - containerPort: 8080
 
