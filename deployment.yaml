@@ -13,7 +13,7 @@ spec:
         app: abc_deploy
     spec:
       containers:
-        - name: abc_deply
+        - name: abc_deploy
         image: renato71/abc_tech:latest
         ports:
         - containerPort: 8080
