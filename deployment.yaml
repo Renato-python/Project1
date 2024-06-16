@@ -1,31 +1,45 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: abc_tech
+  name: renato71/abc_tech
+  namespace: default
+  labels:
+    app: renato71/abc_tech
 spec: 
+  replicas: 2
   selector:
     matchlabels:
-       app: abc_tech
-  replicas: 2    
+       app: renato71/abc_tech   
   template:
     metadata:
       labels:
-        app: abc_tech
+        app: renatp71/abc_tech
     spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: kubernetes.io/arch
+                operator: In
+                values:
+                - amd64
+                - arm64
       containers:
-      - name: abc_tech
+      - name: renato71/abc_tech
         image: renato71/abc_tech:latest
         ports:
-          - containerPort: 8080
+        - name: http
+          - containerPort: 80
 
 ---
 apiVersion: v1
 kind: Service
 metadata: 
-  name: abc_tech
+  name: renato71/abc_tech
 spec:
   selector:
-    app: abc_tech
+    app: renato71/abc_tech
   ports: 
     - protocol: TCP
       port: 80
