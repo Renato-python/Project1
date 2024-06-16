@@ -22,12 +22,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata: 
-  name: abc-tech-deployment  
+  name: abc-LoadBalencer-svc 
 spec:
   selector:
-    app: renato71/abc-tech 
+    app: abc_deploy
   ports: 
     - protocol: TCP
-      port: 8080
+      port: 80
       targetPort: 8080
   type: LoadBalancer           
