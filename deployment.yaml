@@ -5,27 +5,27 @@ metadata:
 spec: 
   selector:
     matchlabels:
-       app: abc_deploy
+       app: abc-tech-deploy
   replicas: 2    
   template:
     metadata:
       labels:
-        app: abc_deploy
+        app: abc-tech-deploy
     spec:
       containers:
       - name: abc-tech-deploy
         image: renato71/abc_tech:latest
         ports:
-        - containerPort: 8080
+          - containerPort: 8080
 
 ---
 apiVersion: v1
 kind: Service
 metadata: 
-  name: abc-LoadBalencer-svc 
+  name: abc-tech-deploy
 spec:
   selector:
-    app: abc_deploy
+    app: abc-tech-deploy
   ports: 
     - protocol: TCP
       port: 80
