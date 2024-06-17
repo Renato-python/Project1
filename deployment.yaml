@@ -1,9 +1,6 @@
-apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: abc_tech
-  labels:
-    app: abc_tech
 spec: 
   replicas: 1
   selector:
@@ -15,7 +12,7 @@ spec:
         app: abc_tech
     spec:
       containers:
-        name: abc_tech
+      - name: abc_tech
         image: renato71/abc_tech:latest
         ports:
           - containerPort: 8080
