@@ -1,6 +1,6 @@
 kind: Deployment
 metadata:
-  name: abc_tech
+  name: renato71/abc_tech
 spec: 
   replicas: 1
   selector:
