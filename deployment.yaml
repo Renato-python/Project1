@@ -1,9 +1,9 @@
-apiVersion: apps
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: abctech
   labels:
-    app: abc
+    app: abctech
 spec: 
   replicas: 1
   selector:
