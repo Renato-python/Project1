@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: v1
 kind: Deployment
 metadata:
   name: abctech
@@ -18,8 +18,7 @@ spec:
         name: abc_tech
         image: renato71/abc_tech:latest
         ports:
-          - containerPort: 8080
-
+          - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
