@@ -15,7 +15,7 @@ spec:
         app: abctech
     spec:
       containers:
-        name: abctech
+        name: abc_tech
         image: renato71/abc_tech:latest
         ports:
           - containerPort: 8080
