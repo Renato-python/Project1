@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - name: abctech
-        image: renato71/abc_tech:51
+        image: renato71/abc_tech:latest
         ports:
-          - containerPort: 8080
+          - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
