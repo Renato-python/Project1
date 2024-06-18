@@ -4,8 +4,6 @@ metadata:
   name: abc-tech-deploy
 spec: 
   selector:
-    matchlabels:
-       app: abc_deploy 
   replicas: 1      
   template:
     metadata:
