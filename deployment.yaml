@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: abctech
-        image: renato71/abc_tech:latest
+        image: renato71/abc_tech:53
         ports:
           - containerPort: 80
 ---
