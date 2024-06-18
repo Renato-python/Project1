@@ -1,5 +1,4 @@
-FROM  tomcat
-WORKDIR usr/local/tomcat
+FROM  tomcat:9.0
 COPY abc_tech.war /usr/local/tomcat
 EXPOSE 8080
-CMD ["catalina.sh"]
+CMD ["catalina.sh", "run"]
