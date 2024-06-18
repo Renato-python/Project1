@@ -8,7 +8,7 @@ spec:
   template:
     metadata:
       labels:
-        app: abc_deploy
+        app: 
     spec:
       containers:
       - name: abctech
