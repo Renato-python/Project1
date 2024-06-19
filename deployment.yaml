@@ -23,12 +23,11 @@ kind: Service
 metadata: 
   name: abc-tech
 spec:
-  type: NodePort 
+  type: LoadBalancer
   selector:
     app: abc_deploy
   ports: 
     - protocol: TCP
       port: 80
-      nodePort: 30986
       targetPort: 8080
             
